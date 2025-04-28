@@ -63,7 +63,7 @@ export function useChat() {
   async function sendMessage() {
     if (!message.value.trim()) return;
 
-    const userId = JSON.parse(localStorage.getItem('uuid')); // cuidado que você escreveu 'user_id' errado antes
+    const userId = JSON.parse(localStorage.getItem('user_id'));
 
     if (!userId) {
       error.value = 'Usuário não encontrado.';
