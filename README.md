@@ -1,47 +1,95 @@
-# Z3R4 Frontend
 
-Interface web em **Vue 3 + Vite** para o projeto **Z3R4**, um chat interativo criado especialmente para os fãs do time de Counter-Strike da **FURIA Esports**.
+# 🖥️ Z3R4 - Frontend Conversacional da FURIA
+
+Este é o frontend oficial do projeto **Z3R4**, o chatbot da torcida da FURIA Esports. Esta interface web conecta fãs ao universo do time de CS:GO por meio de um design moderno, responsivo e com espírito de arquibancada. O app permite cadastro, login e interação com um agente inteligente que responde perguntas sobre o time com base em dados reais.
+
+🔗 Acesse a aplicação: [https://z3r4.vercel.app/](https://z3r4.vercel.app/)
+
+---
 
 ## 🎯 Objetivo
 
-Desenvolver um caso de uso conversacional (Telegram, web chat ou mobile chat) que permita aos torcedores da FURIA acompanhar resultados, estatísticas, novidades e interagir de forma dinâmica com o time e outros fãs.
+Oferecer uma interface fluida e estilizada para os torcedores da FURIA interagirem com o chatbot Z3R4. A aplicação web tem como foco tornar o acesso a informações sobre o time simples, intuitivo e emocionante.
 
-## 💡 Proposta
-
-Crie um chat que ofereça tudo que um fã de CS da FURIA gostaria de ter:
-
-- **Notificações em tempo real** de partidas e placares.  
-- **Estatísticas de jogadores e mapas**, com navegação por menus interativos.  
-- **Agenda de eventos e streamings** oficiais.  
-- **Feed de notícias e conteúdo multimídia**, como vídeos de melhores momentos.  
-- **Enquetes, quizzes e votações** para engajar a comunidade.  
-- **Espaço para interação** entre fãs (chat em grupo ou fórum integrado).
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Vue 3** (`^3.5.13`)  
-- **Vue Router** (`^4.5.1`)  
-- **Vite** (`^6.3.1`)  
-- **Tailwind CSS** (`^3.4.3`)  
-- **PostCSS** (`^8.5.3`)  
-- **Autoprefixer** (`^10.4.21`)  
-- **@vitejs/plugin-vue** (`^5.2.2`)  
-- **Dotenv** (`^16.5.0`)
+- **Vue.js 3** — Framework principal de front-end
+- **Tailwind CSS** — Estilização e responsividade
+- **Vue Router** — Gerenciamento de rotas SPA
+- **Vite** — Build tool leve e rápida
+- **dotenv** — Variáveis de ambiente para API
 
-## 🚀 Como Rodar a Aplicação
+---
 
-1. Clone este repositório:  
-   ```bash
-   git clone https://github.com/MatheusGuimaraes007/z3r4-frontend.git
-   cd z3r4-frontend
+## 📸 Telas do Projeto
 
-   npm install
-   npm run dev
-   npm run build
+As interfaces foram desenhadas com foco em acessibilidade e responsividade:
 
-. Scripts Úteis:  
-   ```bash
-    npm install       # instala dependências
-    npm run dev       # servidor de desenvolvimento (http://localhost:3000)
-    npm run build     # build de produção em /dist
-    npm run preview   # serve build para testes locais
+- Página de Login e Cadastro (desktop e mobile)
+- Tela de chat com Z3R4 (respostas da IA)
+- Elementos visuais que expressam a identidade da FURIA
+
+---
+
+## 🔐 Variáveis de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
+
+```env
+VITE_URL_TEST=http://localhost:xxxx
+VITE_URL_PRODUCTION=https://sua-api-em-producao.com
+```
+
+---
+
+## 🚀 Como Rodar Localmente
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/MatheusGuimaraes007/z3r4-frontend.git
+cd z3r4-frontend
+```
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Crie o arquivo `.env` com as variáveis acima.
+
+4. Rode o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+z3r4-frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── router/
+│   ├── App.vue
+│   └── main.js
+├── .env
+├── index.html
+└── package.json
+```
+
+---
+
+## 👤 Autor
+
+Desenvolvido por **Matheus Guimarães**  
+🔗 [Repositório no GitHub](https://github.com/MatheusGuimaraes007/z3r4-frontend)
+
